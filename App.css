@@ -1,0 +1,274 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 80%;
+    border-top: 15vh;
+    border-left: 50px;
+    border-bottom: 15vh;
+    border-right: 50px;
+    border-style: solid;
+    border-color: #c7dbe2;
+    box-shadow: 0 0 15px 10px #c7dbe2;
+    min-width: 600px;
+    min-height: 500px;
+ 
+}
+
+.App{
+    position:relative;
+    ;
+}
+
+
+/*+++++++++ this is the section for styling the header element +++++++++*/
+.headerbar{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+
+.logo{
+    float: left;
+    width:70%;
+    height:5vh;
+    font-family: cursive;
+    font-weight: 900;
+    
+}
+
+.logo span{
+    display: inline-block;
+    margin-left:2%;
+}
+
+
+.headerbar img{
+    width:6%;
+    height: 10vh;
+    margin-left: 5%;
+}
+
+.headerbar img:hover{
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+/****************here we style the anchor elements for the header*****************/
+
+
+a{
+    text-decoration: none;
+    top: 2vh;
+}
+
+.aholder{
+    float:right;
+    width:30%;
+    position:relative;
+    top:3vh;
+
+}
+
+.aholder a{
+    margin-right:10%;
+    font-weight: 800;
+    font-size: 120%;
+    color: rgb(0, 222, 145);
+    float: left;
+}
+
+a:hover{
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+
+a:active{
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+
+a::after{
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1 ;
+    transition: all .4s;
+    
+}
+
+
+
+
+a:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++this is the section for left photos++++++++++++++++++++++++++++++++*/
+.leftphotos{
+    float:left;
+    width: 30%;
+    height:90vh;
+    position: relative;
+   
+}
+
+span{
+    display:block;
+}
+
+.leftphotos_img1 img{
+    width:40%;
+    position:relative;
+    top: 12vh;
+    left:8%;
+}
+
+.leftphotos_img2 img{
+    width:40%;
+    position:relative;
+    top: 19vh;
+    left:50%;
+}
+
+.leftphotos_img3 img{
+    width:80%;
+    position: relative;
+    top: 32vh;
+    left:6%;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++this is the section for right photos+++++++++++++++++++++++++++++++++*/
+.rightphotos{
+    float: right;
+    width:30%;
+    height:90vh;
+    position: relative;
+    
+}
+
+
+
+.rightphotos--img1 img{
+    position:relative;
+    width:35%;
+    top: 3vh;
+    left:25%;
+}
+
+.rightphotos--img2 img{
+    position:relative;
+    width:35%;
+    top: 8vh;
+    left:57%;
+}
+
+.rightphotos--img3 img{
+    position:relative;
+    width:18%;
+    top: 25vh;
+    left:78%;
+}
+
+.rightphotos--img4 img{
+    position:absolute;
+    width:40%;
+    top: 53vh;
+    left:20%;
+}
+
+/*++++++++++++++++++++++++++++++++++++++this is the section for the middle part of the screen++++++++++++++++++*/
+.contactm{
+    float: right;
+    width:40%;
+    height:90vh;
+    position: relative;
+
+}
+
+.contactm input{border-radius: 8px;
+font-size: 150%;}
+
+.name input,
+.email input{
+    width:98%;
+    margin-bottom: 2vh;
+    height: 8vh;
+}
+
+.message input{
+    width:98%;
+    margin-bottom: 2vh;
+    height: 25vh;
+}
+
+
+.send-cancel input {
+    width:100%;
+    
+    margin-bottom: 2vh;
+    
+}
+
+.send-cancel input:hover{
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+
+.cancel input{
+    background-color: rgba(238, 242, 243, 0);
+
+}
+
+.contactm span{
+    display: inline-block;
+    width:25%;
+    margin-left: 10%;
+}
+
+.submit input{
+    background-color: rgb(0, 222, 145);
+    width:100%;
+    
+}
+
+H1,H2{
+    text-align: center;
+    line-height: 160%;
+    margin-top: 5%;
+    margin-bottom: 6vh;
+}
+
+H2{
+    font-size: 153%;
+}
+
+
+
+/***++++++++++++ this is the section for styling the body element itself +++++++++++++++++++++++*/
+
+body{
+    background-image: url("./images/background.jpeg");
+    background-size: cover;
+    background-position: top;
+    position:relative;
+
+    
+  
+}
